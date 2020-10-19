@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace USRS1
 {
@@ -7,14 +7,11 @@ namespace USRS1
         static void Main(string[] args)
         {
             Console.WriteLine("Введите массу [кг]");
-            string mass = Console.ReadLine();
-            double m = Convert.ToDouble(mass);
+            double m = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите радиус планеты [км]");
-            string rad = Console.ReadLine();
-            double r = Convert.ToDouble(rad);
+            double r = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите высоту [км]");
-            string heig = Console.ReadLine();
-            double h = Convert.ToDouble(heig);
+            double h = Convert.ToDouble(Console.ReadLine());
             double g = 0.0098, s = 2, v;
             v = Math.Sqrt((g * Math.Pow(r, s)) / (r + h));
             Console.WriteLine("Результат = {0} км/с", v);
