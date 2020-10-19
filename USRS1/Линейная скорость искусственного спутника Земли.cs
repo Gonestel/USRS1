@@ -15,7 +15,7 @@ namespace USRS1
             double g = 0.0098, s = 2, v;
             v = Math.Sqrt((g * Math.Pow(r, s)) / (r + h));
             Console.WriteLine("Результат = {0} км/с", v);
-            Console.ReadLine();
+            Console.ReadKey();
 
         }
     }
